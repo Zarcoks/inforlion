@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<!--
-    Ici on va mettre des commentaires
--->
+
 <body id="Argument" style="min-height: 100vh; display: flex; flex-direction: column;">
 <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
     <div class="container-fluid">
