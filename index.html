@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Inforlion</title>
@@ -19,9 +19,6 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./projects">Projets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./projects">Vie Professionnelle</a>
                 </li>
             </ul>
         </div>
@@ -132,19 +129,18 @@
                         <li>2023 - Product Owner chez <a href="projects/altius">Altius</a> (Projet Web Associatif)</li>
                     </ul>
                 </li>
+                <li class="mt-5">
+                    <h3>🛠️ Le projet professionnel</h3>
+                    <p>Mon projet professionnel est de devenir chercheur dans L'IA. Mais la route est longue !</p>
+                    <p>Dès ma troisième année de BUT, mon ambition est de partir 1 an à l'étranger. J'y pratiquerai l'anglais, et
+                        j'y découvrirai une nouvelle façon d'apprendre.</p>
+                    <p>Après le BUT, je souhaite partir en école d'ingénieur, en parcours IA évidemment. Je ne sais pas encore
+                        si je ferai une école à l'étranger ou bien en France, cela dépendra de mon impression lors de mon précédent voyage.</p>
+                    <p>Enfin, je souhaite donc faire une thèse (le sujet précis n'est évidemment pas encore décidé !), cette fois dans un
+                        pays comme le Japon qui m'attire beaucoup.</p>
+                    <p>Dans le monde de l'entreprise, j'imagine que je travaillerai en tant que chercheur en grande entreprise, mais cela étant
+                    dans plus de 7 ans, je pourrai tout aussi bien décider de travailler dans le public. Cela reste à décider !</p>
             </ul>
-        </section>
-
-        <section class="container" style="margin-bottom: 120px">
-            <h1 class="text-center">🌈 Découvrez mon univers :</h1>
-            <article class="mt-5">
-                <h3>🛠️ Projets Innovants:</h3>
-                <p>Plongez dans mes réalisations variées en développement informatique, mettant en avant mes compétences et mon travail d'équipe</p>
-            </article>
-            <article class="mt-5">
-                <h3>🌐 Connectons-nous:</h3>
-                <p>Rejoignez-moi dans cette aventure passionnante. Consultez mon portfolio, apprenez à me connaître davantage, et n'hésitez pas à me contacter pour discuter de projets futurs.</p>
-            </article>
         </section>
 
         <section class="container d-flex justify-content-center text-center" style="margin-bottom: 120px">
@@ -175,6 +171,11 @@
                     </svg>
                 </a>
             </div>
+        </section>
+
+        <!-- Télécharger mon CV -->
+        <section class="d-flex justify-content-center align-items-center mt-5 mb-5">
+            <a href="assets/files/CV%20-%20Janvier%202024.pdf" download="cv-VictorJost.pdf" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Télécharger mon CV</a>
         </section>
     </div>
 
@@ -209,8 +210,10 @@
         let fleche = document.getElementById('fleche');
         // delay de 2.5s
         setTimeout(function () {
-            fleche.classList.remove('opacity-0');
-            fleche.classList.add('opacity-100');
+            // Faire en sorte que la fleche clignote :
+            setInterval(function () {
+                fleche.classList.toggle('opacity-0');
+            }, 500);
         }, 2500);
     </script>
 </body>

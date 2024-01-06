@@ -1,7 +1,7 @@
 <section class="container-sm p-3 d-flex flex-column align-items-center bg-white shadow mb-5">
     <article class="mb-5 text-center" style="width: 60%">
         <img class="mb-3" src="../assets/images/logo.png" alt="pingouin" width="200px" height="260px">
-        <h1 class="fw-bold">Bienvenue sur The Pinguin Ice Floe - Agissons pour la planète!</h1>
+        <h1 class="fw-bold">Bienvenue sur The Penguin Ice Floe - Agissons pour la planète!</h1>
     </article>
     <article class="mb-5" style="width: 80%">
         <h3 class="mb-3">🌍 Découvrez des solutions concrètes pour ralentir le réchauffement climatique et lutter contre
