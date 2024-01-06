@@ -8,32 +8,39 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg border-bottom" data-bs-theme="dark" style="background-color: #000018;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/"><img src="/assets/images/inforlionlogo.png" alt="" style="width: 50px; height: 50px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./projects">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">A Propos</a>
-                    </li>
-                </ul>
-            </div>
+        <a class="navbar-brand" href="/"><img src="/assets/images/inforlionlogo.png" alt="" style="width: 50px; height: 50px; margin-left: 10px"></a>
+        <button class="navbar-toggler border-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 20px">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./projects">Projets</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="bg-black fullscreen d-flex justify-content-center align-items-center" style="height: 100vh; padding-bottom: 10vh">
-        <h1 class="ml3 text-light font-monospace" style="font-weight: 900; font-size: 8rem;">Victor Jost</h1>
+
+    <!-- Le Victor Jost -->
+    <div class="bg-black d-flex justify-content-center align-items-end text-center" style="height: 50vh;">
+        <h1 class="ml3 text-light font-monospace opacity-0" style="font-weight: 900; font-size: 8rem;">Victor Jost</h1>
     </div>
+
+    <!-- Le svg -->
+    <div class="bg-black d-flex justify-content-center align-items-center" style="height: 50vh;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-down-short mt-5 opacity-0" viewBox="0 0 16 16" id="fleche">
+            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+        </svg>
+    </div>
+
+    <!-- La citation avec image-->
     <img src="/assets/images/transition.jpeg" alt="" style="width: 100vw">
-    <div class="d-flex flex-column align-items-center justify-content-center" style="margin-top: 30vh">
-        <img class="border-black border" src="/assets/images/banniere.jpeg" alt="" style="width: 60vw">
+    <div class="container-md d-flex flex-column align-items-center justify-content-center" style="margin-top: 30vh">
+<!--        <img class="border-black border" src="/assets/images/banniere.jpeg" alt="" style="width: 60vw">-->
+        <img class="border-black border mw-100" src="/assets/images/banniere.jpeg" alt="" >
         <div class="mt-4">
             <cite>Rien ne se perd, rien ne se crée, tout se transforme.</cite>
             <p>- Antoine Lavoisier</p>
@@ -41,64 +48,140 @@
     </div>
 
     <!-- Les articles commencent ici -->
-    <div class="bg-light container-fluid" style="margin-top: 30vh">
-        <section class="container" style="margin-bottom: 120px">
+    <div class="bg-white container-fluid" style="margin-top: 30vh; width: 50vw;">
+        <section class="container-md" style="margin-bottom: 120px">
             <h1 class="text-center">Bienvenue sur Inforlion.fr ! 🚀</h1>
             <h5 class="fst-italic text-dark text-center">Le site officiel de Victor Jost</h5>
             <article class="mt-5">
                 <p>Salut ! Je suis Victor, un passionné d'informatique et d'intelligence artificielle, basé à Montpellier 🏔️.</p>
-                <p>À 19 ans, je suis en plein essor dans le domaine de l'informatique et je souhaite partager ma fascination pour le Machine Learning, les réseaux, et l'administration système.</p>
+                <p>Vous trouverez sur ce site une page de présentation de soi (ici présente) avec ma vision pour le futur inclus, ainsi qu'une page présentant <a href="projects">l'ensemble de mes projets</a> en tout genre.</p>
             </article>
         </section>
 
-        <section class="container" style="margin-bottom: 120px">
-            <h1 class="text-center">🌐 Explore avec moi :</h1>
-            <article class="mt-5">
-                <h3>🤖 Machine Learning Enthusiast:</h3>
-                <p>Explorez le futur avec moi à travers mes découvertes et projets dans le monde captivant de l'IA.</p>
-            </article>
-            <article class="mt-5">
-                <h3>💻 Network Explorer: </h3>
-                <p>Plongez dans l'univers des réseaux et de l'administration système. Découvrez comment tout se connecte et fonctionne en harmonie.</p>
-            </article>
+        <section class="container" style="margin-bottom: 120px;">
+            <h1 class="text-center">Ma biographie en quelques lignes</h1>
+            <ul>
+                <li class="mt-5">
+                    <h3>🧑‍💻 Ma vie de passionné :</h3>
+
+                    <p>Du plus loin que je me souvienne, j'ai toujours eu une fascination pour la nature. Toujours curieux de
+                        voir comment les choses fonctionnent autour de moi, je me suis très vite trouvé un profil dans la recherche. </p>
+
+                    <p>Les études sont pour moi un moyen d'assouvir (faiblement) ma soif de connaissances. J'apprends et
+                        développe mes compétences avec passion. Naturellement, j'apprécie communiquer avec les personnes qui m'entourent
+                        et je suis une oreille attentive au monde scientifique. </p>
+
+                    <p>L'informatique, pour moi, c'est un monde tout neuf qui reste à explorer, et dans lequel je peux donner libre
+                        cours à ma créativité. Je suis donc ravi de mettre à profit le fruit de mes recherches au service de personnes
+                        dans le besoin.</p>
+                </li>
+
+                <li class="mt-5">
+                    <h3>🌎 Mes centres d'intérêt :</h3>
+                    <ul>
+                        <li>🤖 L'Intelligence Artificielle, encore toute jeune aujourd'hui, qui n'attend que d'être améliorée encore et encore.</li>
+                        <li>🌐 Les Réseaux, au centre d'internet et du monde informatique, dont la compréhension est essentielle pour
+                            tout informaticien.</li>
+                        <li>🧪 La Recherche</li>
+                        <li>🎸 La Musique</li>
+                    </ul>
+                </li>
+
+                <li class="mt-5">
+                    <h3>🚀 Mon parcours de formation :</h3>
+                    <div id="carouselFormation" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselFormation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselFormation" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/lyceejoffre.png" class="d-block w-100" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="bg-dark bg-opacity-75">(2021-2022) Lycée Joffre</h5>
+                                    <p class="bg-dark bg-opacity-75">Physique Chimie - Mathématiques (+Expertes) - Numérique et Sciences Informatiques</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/iut.png" class="d-block w-100" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="bg-dark bg-opacity-75">(2022-2025) IUT Montpellier-Sète</h5>
+                                    <p class="bg-dark bg-opacity-75">Développement Logiciel - Développement web - Développement Mobile -
+                                        Algorithmique Avancée - Gestion de projet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFormation" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFormation" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </li>
+                <li class="mt-5">
+                    <h3>💻 Mes Expériences Professionnelles</h3>
+                    <ul>
+                        <li>2017 - Stage chez <a href="https://labsud.org/">LabSud</a>, informatique et micro-électronique</li>
+                        <li>2021 - Stage d'observation chez <a href="https://www.linkedin.com/in/enzo-viry-204561198/?originalSubdomain=fr">Enzo Viry</a> (Freelance en web Full-Stack)</li>
+                        <li>2023 - Product Owner chez <a href="projects/altius">Altius</a> (Projet Web Associatif)</li>
+                    </ul>
+                </li>
+                <li class="mt-5">
+                    <h3>🛠️ Le projet professionnel</h3>
+                    <p>Mon projet professionnel est de devenir chercheur dans L'IA. Mais la route est longue !</p>
+                    <p>Dès ma troisième année de BUT, mon ambition est de partir 1 an à l'étranger. J'y pratiquerai l'anglais, et
+                        j'y découvrirai une nouvelle façon d'apprendre.</p>
+                    <p>Après le BUT, je souhaite partir en école d'ingénieur, en parcours IA évidemment. Je ne sais pas encore
+                        si je ferai une école à l'étranger ou bien en France, cela dépendra de mon impression lors de mon précédent voyage.</p>
+                    <p>Enfin, je souhaite donc faire une thèse (le sujet précis n'est évidemment pas encore décidé !), cette fois dans un
+                        pays comme le Japon qui m'attire beaucoup.</p>
+                    <p>Dans le monde de l'entreprise, j'imagine que je travaillerai en tant que chercheur en grande entreprise, mais cela étant
+                    dans plus de 7 ans, je pourrai tout aussi bien décider de travailler dans le public. Cela reste à décider !</p>
+            </ul>
         </section>
 
-        <section class="container" style="margin-bottom: 120px">
-            <h1 class="text-center">Qui suis-je vraiment? 🧑‍💻</h1>
-            <article class="mt-5">
-                <h3>🔍 Étudiant Passionné:</h3>
-                <p>Actuellement en 2e année de BUT Informatique à l'IUT de Grenoble, je suis avide d'apprendre et de comprendre les rouages de l'informatique.</p>
-            </article>
-            <article class="mt-5">
-                <h3>🚀 Futur Chercheur en IA ou Ingénieur Réseau?:</h3>
-                <p>Mes aspirations oscillent entre la recherche en IA et l'ingénierie réseau. Suivez mon parcours et découvrez où ma passion me mènera.</p>
-            </article>
+        <section class="container d-flex justify-content-center text-center" style="margin-bottom: 120px">
+            <!-- Linkedin -->
+            <div class="col-3">
+                <a href="https://www.linkedin.com/in/victor-jost-562420255/" title="Victor Jost">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Github -->
+            <div class="col-3">
+                <a href="https://github.com/Zarcoks" title="Victor Jost">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="black" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Mail -->
+            <div class="col-3">
+                <a href="mailto:victorjost34@gmail.com" title="victorjost34@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="black" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                        <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                    </svg>
+                </a>
+            </div>
         </section>
 
-        <section class="container" style="margin-bottom: 120px">
-            <h1 class="text-center">🌈 Découvrez mon univers :</h1>
-            <article class="mt-5">
-                <h3>🛠️ Projets Innovants:</h3>
-                <p>Plongez dans mes réalisations variées en développement informatique, mettant en avant mon travail d'équipe et mes compétences en gestion de projet.</p>
-            </article>
-            <article class="mt-5">
-                <h3>🌐 Connectons-nous:</h3>
-                <p>Rejoignez-moi dans cette aventure passionnante. Consultez mon portfolio, apprenez à me connaître davantage, et n'hésitez pas à me contacter pour discuter de projets futurs.</p>
-            </article>
+        <!-- Télécharger mon CV -->
+        <section class="d-flex justify-content-center align-items-center mt-5 mb-5">
+            <a href="assets/files/CV%20-%20Janvier%202024.pdf" download="cv-VictorJost.pdf" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Télécharger mon CV</a>
         </section>
-
-        <h2 class="text-center text-dark mt-5 mb-5">--</h2>
-
-        <div class="d-flex justify-content-center" style="margin-bottom: 120px">
-            <h2>🚀</h2>
-            <h2 class="text-center fst-italic" style="margin: 0 10px 0 10px">Let's Code the Future Together!</h2>
-            <h2>👨‍💻</h2>
-        </div>
     </div>
 
     <footer class="bg-dark p-5 footer mt-auto">
         <div class="container text-light d-flex justify-content-evenly container-fluid align-items-center">
-            Site réalisé par VictorJ.
+            Site réalisé par Victor Jost
             <a href="" style="text-decoration: none; color: inherit">Mentions Légales</a>
             Copyright © 2023 Inforlion | Tout droit réservé
             <!-- TODO: Mentions légales -->
@@ -109,7 +192,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script>
         // Wrap every letter in a span
-        var textWrapper = document.querySelector('.ml3');
+        let textWrapper = document.querySelector('.ml3');
+        textWrapper.classList.remove('opacity-0');
+        textWrapper.classList.add('opacity-100')
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
         anime.timeline()
@@ -120,6 +205,16 @@
                 duration: 2250,
                 delay: (el, i) => 150 * (i+1)
             })
+
+        // La fleche qui descend qui apparait à son tour après l'animation
+        let fleche = document.getElementById('fleche');
+        // delay de 2.5s
+        setTimeout(function () {
+            // Faire en sorte que la fleche clignote :
+            setInterval(function () {
+                fleche.classList.toggle('opacity-0');
+            }, 500);
+        }, 2500);
     </script>
 </body>
 </html>

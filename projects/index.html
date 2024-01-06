@@ -7,8 +7,226 @@
     <link rel="icon" href="/assets/images/inforlionlogo.png" type="image/png">
 </head>
 <body>
-    <h1>Cette page est en cours de développement.</h1>
-    <h1>Projets disponibles :</h1>
-    <a href="/projects/ThePenguinIceFloe">ThePenguinIceFloe</a>
+    <nav class="navbar navbar-expand-lg border-bottom" data-bs-theme="dark" style="background-color: #000018;">
+        <a class="navbar-brand" href="/"><img src="/assets/images/inforlionlogo.png" alt="" style="width: 50px; height: 50px; margin-left: 10px"></a>
+        <button class="navbar-toggler border-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 20px">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./projects">Projets</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-6" style="min-width: 300px">
+                    <h2 class="text-center mt-5 mb-5">Projets d'études</h2>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <!-- Chuck Norris -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/chucknorris.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Le Site Web Non-Officiel de Chuck-Norris</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">HTML / CSS</span>
+                                    </div>
+                                    <p class="card-text">Mise en pratique des cours de HTML et de CSS.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Escape Game -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/escapegame.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Escape Game</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">HTML / CSS</span>
+                                    </div>
+                                    <p class="card-text">Création d'un projet d'envergure en équipe présenté avec un joli site web.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Le parc d'attraction -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/premieresaebd.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Le parc d'attraction</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">SQL</span>
+                                    </div>
+                                    <p class="card-text">Mise en pratique des cours de SQL.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Sacha's Gaming Space -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/sachasgamingspace.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sacha's Gaming Space Adventure</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">MySQL</span>
+                                        <span class="badge text-bg-secondary">php</span>
+                                        <span class="badge text-bg-secondary">Comptabilité</span>
+                                        <span class="badge text-bg-secondary">Réseau</span>
+                                    </div>
+                                    <p class="card-text">Création d'un projet d'entreprise, comptabilité incluse (estimations des couts, bilan comptable etc.)
+                                        puis mise en place du matériel réseau, et enfin mise en place des serveurs MySQL et Apache.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Controverse sociotechnique -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/controverse.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Controverse Sociotechnique</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">HTML / CSS</span>
+                                    </div>
+                                    <p class="card-text">Synthétisation de recherches sur un sujet donné, pour réalisation d'un site web
+                                    pour présenter les articles.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Mastermind -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/mastermind.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mastermind</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">Java</span>
+                                    </div>
+                                    <p class="card-text">Implémentation d'un MasterMind en java dans la console. Comprend aussi l'IA
+                                    qui gagne à chaque fois.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Les Aventuriers du Rail -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/aventuriers.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Les Aventuriers du Rail</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">Java</span>
+                                        <span class="badge text-bg-secondary">JavaFX</span>
+                                    </div>
+                                    <p class="card-text">Implémentation Full-Stack des aventuriers du rail, en Java et JavaFX.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/garage.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Le Garage à Voitures</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">HTML / CSS</span>
+                                        <span class="badge text-bg-secondary">php</span>
+                                    </div>
+                                    <p class="card-text">Mise en pratique des cours de php.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+                <div class="col-6">
+                    <h2 class="text-center mt-5 mb-5" style="min-width: 300px">Projets Personnels</h2>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <!-- Time Mage Tournament -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/timemagetournament.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Time Mage Tournament</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">Lua</span>
+                                        <span class="badge text-bg-secondary">PICO-8</span>
+                                    </div>
+                                    <p class="card-text">Code Game Jam 2023 - IUT Montpellier-Sète. (🏆 Prix Design)</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Site web perso -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/siteperso.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portfolio v.1</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">HTML / CSS</span>
+                                        <span class="badge text-bg-secondary">JavaScript</span>
+                                    </div>
+                                    <p class="card-text">Site web personnel m'ayant par le passé servi comme portfolio.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Copper -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/copper.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Copper Ideas</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">Java</span>
+                                        <span class="badge text-bg-secondary">JavaFX</span>
+                                    </div>
+                                    <p class="card-text">Application pour travailler son anglais.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- IA Snake -->
+                        <section class="col">
+                            <div class="card">
+                                <img src="/projects/images/snake.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">IA Snake</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">Python</span>
+                                        <span class="badge text-bg-secondary">Pygame</span>
+                                        <span class="badge text-bg-secondary">Q-Learning</span>
+                                    </div>
+                                    <p class="card-text">Implémentation du jeu Snake en python puis réalisation de l'IA en machine learning pour pratiquer les algorithmes d'apprentissage profond.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- The Penguin Ice Floe -->
+                        <section class="col">
+                            <a class="card" href="/projects/ThePenguinIceFloe" style="text-decoration: none">
+                                <img src="/projects/images/penguin.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Penguin Ice Floe</h5>
+                                    <div class="mb-3">
+                                        <span class="badge text-bg-secondary">HTML / CSS</span>
+                                        <span class="badge text-bg-secondary">Bootstrap Framework</span>
+                                        <span class="badge text-bg-secondary">php</span>
+                                    </div>
+                                    <p class="card-text">
+                                        Nuit de l'Info 2023 - Polytech Montpellier
+                                    </p>
+                                </div>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
