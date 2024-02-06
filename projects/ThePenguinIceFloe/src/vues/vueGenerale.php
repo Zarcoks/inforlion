@@ -87,7 +87,7 @@
     ?>
 
     <div id="video-container-glace">
-        <video autoplay loop muted id="video-glace">
+        <video autoplay loop muted id="video-glace" style="min-height: 100vh">
             <source src="../assets/videos/banquise.mp4" type="video/mp4">
             Votre navigateur ne prend pas en charge la balise vidéo.
         </video>
