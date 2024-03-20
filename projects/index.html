@@ -25,6 +25,10 @@
     </nav>
 
     <main>
+        <h1 class="text-danger text-center">/!\ Page en développement /!\</h1>
+        <p class="container-sm">Très prochainement, retrouvez des images détaillées de chaque projet, contenant des images, des descriptions
+        complètes, ainsi que des liens vers les projets !</p>
+        <p class="container-sm fst-italic text-center">Vous pouvez cliquer sur les cartes.</p>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-6" style="min-width: 300px">
@@ -32,7 +36,7 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <!-- Chuck Norris -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#chuckNorrisDesc">
                                 <img src="/projects/images/chucknorris.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Le Site Web Non-Officiel de Chuck-Norris</h5>
@@ -42,23 +46,82 @@
                                     <p class="card-text">Mise en pratique des cours de HTML et de CSS.</p>
                                 </div>
                             </div>
+                            <!-- Description détaillée Chuck Norris -->
+                            <div class="modal fade" id="chuckNorrisDesc" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/chucknorris.png" class="card-img-top mb-5" alt="">
+                                            Voici mes tout premiers pas en développement web.
+                                            <br>
+                                            <br>
+                                            Le HTML / CSS, c'est comme les briques dans une maison. Sans ça, pas de site web !
+                                            <br>
+                                            <br>
+                                            C'est pourquoi, en mes débuts dans l'informatique je me suis lancé dans ce projet de me diversifier un maximum
+                                            dans l'utilisation de ces technologies.
+                                            <br>
+                                            <br>
+                                            <span class="fst-italic text-danger">Retrouvez prochainement un accès privé à ce site unique en son genre.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <!-- Escape Game -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#spaceship">
                                 <img src="/projects/images/escapegame.png" class="card-img-top" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title">Escape Game</h5>
+                                    <h5 class="card-title">The Spaceship of the Castaways</h5>
                                     <div class="mb-3">
                                         <span class="badge text-bg-secondary">HTML / CSS</span>
                                     </div>
                                     <p class="card-text">Création d'un projet d'envergure en équipe présenté avec un joli site web.</p>
                                 </div>
                             </div>
+                            <!-- Description détaillée de The Spaceship of the castaways -->
+                            <div class="modal fade" id="spaceship" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/escapegame.png" class="card-img-top mb-5" alt="">
+                                            Après avoir fait le site web de Chuck Norris, il me fallait maintenant aller plus loin...
+                                            <br>
+                                            A ce niveau de mon parcours, il me manquait une équipe.
+                                            <br>
+                                            <br>
+                                            Ainsi, je me suis lancé dans un projet cette fois en équipe pour développer mon expérience
+                                            à ce niveau-là. En effet, seul, on va vite ; ensemble, on va loin !
+                                            <br>
+                                            <br>
+                                            Avec d'autres personnes de mon niveau de web, nous avons mis en commun nos compétences acquises
+                                            pour donner naissance à ce site web.
+                                            <br>
+                                            <br>
+                                            <span class="fst-italic text-danger">Retrouvez prochainement un accès privé à ce site empli de bonne énergie.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <!-- Le parc d'attraction -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#bd">
                                 <img src="/projects/images/premieresaebd.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Le parc d'attraction</h5>
@@ -68,10 +131,43 @@
                                     <p class="card-text">Mise en pratique des cours de SQL.</p>
                                 </div>
                             </div>
+                            <!-- Description détaillée de BD -->
+                            <div class="modal fade" id="bd" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/premieresaebd.png" class="card-img-top mb-5" alt="">
+                                            Et maintenant, que fait-on ?
+                                            <br>
+                                            <br>
+                                            Pour maintenant pouvoir vendre mes sites web, il fallait que je leur donne du dynamisme !
+                                            <br>
+                                            <br>
+                                            Pour dynamiser un site web, c'est-à-dire adapter l'affichage en fonction de données,
+                                            nous, informaticiens, utilisons des Bases de Données.
+                                            <br>
+                                            Il s'agit d'un dispositif à part qui permet d'enregistrer, traiter, et récupérer des données.
+                                            <br>
+                                            La maîtrise de ce concept est essentiel pour rendre nos sites dynamiques.
+                                            <br>
+                                            <br>
+                                            Avec mon équipe, nous avons donc expérimenté de créer une 'BD' indépendante du reste
+                                            pour se donner une première expérience avant de se lancer dans un projet plus important.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <!-- Sacha's Gaming Space -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#sacha">
                                 <img src="/projects/images/sachasgamingspace.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Sacha's Gaming Space Adventure</h5>
@@ -85,10 +181,37 @@
                                         puis mise en place du matériel réseau, et enfin mise en place des serveurs MySQL et Apache.</p>
                                 </div>
                             </div>
+                            <!-- Description détaillée Sacha's gaming space adventure -->
+                            <div class="modal fade" id="sacha" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/sachasgamingspace.png" class="card-img-top mb-5" alt="">
+                                            L'informatique, c'est mon principal domaine d'étude. Mais plus l'on se spécialise,
+                                            plus l'on dépend de cette spécialisation.
+                                            <br>
+                                            <br>
+                                            Il est donc essentiel pour moi de me diversifier, et c'est justement l'objectif de ce
+                                            projet.
+                                            <br>
+                                            <br>
+                                            J'ai en fait simulé la création d'un projet entrepreneurial pour y apprendre la comptabilité
+                                            et plus généralement le management de systèmes d'information.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <!-- Controverse sociotechnique -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#controverse">
                                 <img src="/projects/images/controverse.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Controverse Sociotechnique</h5>
@@ -99,10 +222,37 @@
                                     pour présenter les articles.</p>
                                 </div>
                             </div>
+                            <!-- Controverse description -->
+                            <div class="modal fade" id="controverse" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/controverse.png" class="card-img-top mb-5" alt="">
+                                            Tout comme pour le projet précédent, je veux me diversifier.
+                                            <br>
+                                            <br>
+                                            J'ai donc cette fois appris la rédaction d'articles, pour gagner en clarté dans mon
+                                            expression écrite, et me permettant aussi de me rapprocher de mes objectifs dans la
+                                            recherche.
+                                            <br>
+                                            <br>
+                                            J'ai donc pris un sujet sur l'IA: "L'IA est-elle vraiment intelligente ?",
+                                            puis j'ai récolté un maximum d'information sur ce sujet, puis j'en ai fait une synthèse.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <!-- Mastermind -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#mastermind">
                                 <img src="/projects/images/mastermind.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Mastermind</h5>
@@ -113,10 +263,42 @@
                                     qui gagne à chaque fois.</p>
                                 </div>
                             </div>
+                            <!-- Mastermind description -->
+                            <div class="modal fade" id="mastermind" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/mastermind.png" class="card-img-top" alt="">
+                                            Attaquons maintenant un peu de Java.
+                                            <br>
+                                            <br>
+                                            Étant passionné d'IA, je ne peux pas faire que du web. J'ai donc voulu me
+                                            rendre pluridisciplinaire en termes de langages informatiques à travers ce projet.
+                                            <br>
+                                            <br>
+                                            J'ai codé tout un mastermind avec l'aide d'un coéquipier de mon niveau, et bien
+                                            sûr, je n'ai pu m'empêcher de coder l'IA qui va avec !
+                                            <br>
+                                            Ce n'est bien sûr pas du machine learning, faute de temps dans l'apprentissage,
+                                            mais une IA à base d'algorithme à résultat fixe, qui fait toujours les meilleurs choix.
+                                            <br>
+                                            <br>
+                                            <span class="fst-italic text-danger">Retrouvez prochainement un accès au repository github du projet.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <!-- Les Aventuriers du Rail -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#aventurier">
                                 <img src="/projects/images/aventuriers.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Les Aventuriers du Rail</h5>
@@ -127,9 +309,47 @@
                                     <p class="card-text">Implémentation Full-Stack des aventuriers du rail, en Java et JavaFX.</p>
                                 </div>
                             </div>
+                            <!-- Aventuriers description -->
+                            <div class="modal fade" id="aventurier" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/aventuriers.png" class="card-img-top" alt="">
+                                            Java, très utilisé dans la programmation logiciel, permet aussi de faire des
+                                            interfaces graphiques.
+                                            <br>
+                                            <br>
+                                            Qu'est-ce qu'une IA sans une belle interface ?
+                                            <br>
+                                            C'est un prodige qui n'est pas vu.
+                                            <br>
+                                            <br>
+                                            Il me fallait donc absolument apprendre à gérer des interfaces graphiques, d'où ce projet
+                                            en JavaFX.
+                                            <br>
+                                            <br>
+                                            Cette fois, c'est un projet tout bonnement gigantesque, de plus de 100 heures.
+                                            <br>
+                                            <br>
+                                            <br>
+                                            Je peux justifier ici une très bonne maîtrise de la technologie employée.
+                                            <br>
+                                            <br>
+                                            <span class="fst-italic text-danger">Retrouvez prochainement un accès au repository github du projet.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#Garage">
                                 <img src="/projects/images/garage.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Le Garage à Voitures</h5>
@@ -138,6 +358,47 @@
                                         <span class="badge text-bg-secondary">php</span>
                                     </div>
                                     <p class="card-text">Mise en pratique des cours de php.</p>
+                                </div>
+                            </div>
+                            <!-- Garage description -->
+                            <div class="modal fade" id="Garage" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/garage.png" class="card-img-top mb-5" alt="">
+                                            Ici, je reviens sur de la programmation web dynamique.
+                                            <br>
+                                            <br>
+                                            Saviez-vous qu'un site web vous rend visible de plus de 4Md de personnes ?
+                                            <br>
+                                            <br>
+                                            Si je fais des IA sans un minimum les vendre, ce serait comme être peintre et ne pas
+                                            montrer ses peintures. Ce serait dommage !
+                                            <br>
+                                            <br>
+                                            De plus, le web est une technologie de plus en plus émergente dans le monde informatique,
+                                            permettant de faire des outils accessibles autant sur ordinateur que sur téléphone.
+                                            <br>
+                                            <br>
+                                            J'ai donc opté pour le php afin d'apprendre le backend. Ce que l'on appelle backend, c'est
+                                            en fait un traitement de vos données au niveau du serveur, pour proposer des pages qui sont dynamiques.
+                                            <br>
+                                            <br>
+                                            C'est par exemple en php (même si d'autres solutions sont possibles) que l'on programme
+                                            la fonctionnalité de connexion / inscription sur les sites, ou bien l'achat et traitement
+                                            de vos commandes sur amazon etc.
+                                            <br>
+                                            <br>
+                                            <span class="fst-italic text-danger">Retrouvez prochainement un accès privé à la page du projet.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -150,7 +411,7 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <!-- Time Mage Tournament -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#time">
                                 <img src="/projects/images/timemagetournament.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Time Mage Tournament</h5>
@@ -161,10 +422,42 @@
                                     <p class="card-text">Jeu réalisé lors de la Code Game Jam 2023 - IUT Montpellier-Sète. (🏆 Prix Design)</p>
                                 </div>
                             </div>
+                            <!-- time description -->
+                            <div class="modal fade" id="time" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/timemagetournament.png" class="card-img-top mb-5" alt="">
+                                            Et dans tout ça, pourquoi ne pas coder un jeu vidéo ?
+                                            <br>
+                                            <br>
+                                            Durant ce que l'on appelle une Game Jam, par équipe de 6, nous codons un jeu
+                                            vidéo pour apprendre un peu ce domaine que l'on ne connait que par l'interface.
+                                            <br>
+                                            <br>
+                                            Nous avons appris le lua, les bases de la programmation avec des sprites, des
+                                            collisions, de l'animation et toutes les compétences pour faire une jeu vidéo.
+                                            <br>
+                                            <br>
+                                            Nous avions deux graphistes, deux sound designers, et deux développeurs, dont moi !
+                                            <br>
+                                            <br>
+                                            Je vous invite à aller voir notre <a href="https://www.youtube.com/watch?v=8t6CjMrLr1s" target="_blank">vidéo de présentation</a> pour une jolie démonstration !
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <!-- Site web perso -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#portfolio">
                                 <img src="/projects/images/siteperso.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Portfolio v.1</h5>
@@ -175,10 +468,44 @@
                                     <p class="card-text">Site web personnel m'ayant par le passé servi comme portfolio.</p>
                                 </div>
                             </div>
+                            <!-- portfolio description -->
+                            <div class="modal fade" id="portfolio" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/siteperso.png" class="card-img-top" alt="">
+                                            Voici l'ancêtre du site web sur lequel vous êtes aujourd'hui.
+                                            <br>
+                                            <br>
+                                            A ce moment de mon parcours, je maîtrisais le HTML / CSS et je voulais en faire quelque
+                                            chose.
+                                            <br>
+                                            <br>
+                                            D'humeur altruiste et en anticipant mes besoins futurs, j'ai donc codé un site web
+                                            dans lequel je présentais mes projets et postais mes annonces.
+                                            <br>
+                                            <br>
+                                            L'une d'elles était : "je fais des sites web gratuits !"
+                                            <br>
+                                            Il faut dire que je tenais vraiment à m'améliorer, et tant qu'à faire, autant rendre service !
+                                            <br>
+                                            <br>
+                                            <span class="fst-italic text-danger">Retrouvez prochainement un accès privé au site web.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <!-- Copper -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#copper">
                                 <img src="/projects/images/copper.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Copper Ideas</h5>
@@ -189,10 +516,45 @@
                                     <p class="card-text">Application pour travailler son anglais.</p>
                                 </div>
                             </div>
+                            <!-- copper description -->
+                            <div class="modal fade" id="copper" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/copper.png" class="card-img-top mb-5" alt="">
+                                            Qui n'a jamais rêvé d'apprendre une langue à une vitesse fulgurante ?
+                                            <br>
+                                            <br>
+                                            Tout comme je continue aujourd'hui, je lisais à cette époque des livres en anglais.
+                                            <br>
+                                            Problème : il y avait toujours plein de mots de vocabulaire que je n'arrivais pas à retenir.
+                                            <br>
+                                            <br>
+                                            J'ai regardé ce que proposait le marché, et en fait rien ne me convenait.
+                                            <br>
+                                            <br>
+                                            Donc j'ai fait mon propre logiciel, qui d'ailleurs marchait plutôt bien.
+                                            <br>
+                                            En java / javaFX, je pouvais entrer un nouveau mot et ses traductions, et en fonction
+                                            d'à quel point j'échouais / réussissais, les mots revenaient plus ou moins souvent à la répétition.
+                                            <br>
+                                            <br>
+                                            <span class="fst-italic text-danger">Retrouvez prochainement un accès privé au projet.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <!-- IA Snake -->
                         <section class="col">
-                            <div class="card">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#snake">
                                 <img src="/projects/images/snake.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">IA Snake</h5>
@@ -204,10 +566,39 @@
                                     <p class="card-text">Implémentation du jeu Snake en python puis réalisation de l'IA en machine learning pour pratiquer les algorithmes d'apprentissage profond.</p>
                                 </div>
                             </div>
+                            <!-- snake description -->
+                            <div class="modal fade" id="snake" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/snake.png" class="card-img-top mb-5" alt="">
+                                            J'évoque souvent mes rêves de recherches dans l'IA, et voici venu le projet qui me lance
+                                            dans cette aventure.
+                                            <br>
+                                            <br>
+                                            Ce qui me plait dans l'IA, c'est de la voir apprendre, puis en sachant son apprentissage,
+                                            voir ses résultats.
+                                            <br>
+                                            J'ai choisi de commencer simple : un jeu en python, un algorithme simplifié d'apprentissage
+                                            profond, un joli entrainement et c'est parti !
+                                            <br>
+                                            <br>
+                                            <span class="fst-italic text-danger">Retrouvez prochainement un accès privé au projet.</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                         <!-- The Penguin Ice Floe -->
                         <section class="col">
-                            <a class="card" href="/projects/ThePenguinIceFloe" style="text-decoration: none">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#penguin">
                                 <img src="/projects/images/penguin.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">The Penguin Ice Floe</h5>
@@ -220,12 +611,45 @@
                                         Nuit de l'Info 2023 - Polytech Montpellier
                                     </p>
                                 </div>
-                            </a>
+                            </div>
+                            <!-- penguin description -->
+                            <div class="modal fade" id="penguin" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/penguin.png" class="card-img-top mb-5" alt="">
+                                            A travers tous mes projets, j'avais appris à utiliser 'Bootstrap'.
+                                            <br>
+                                            <br>
+                                            Bootstrap, c'est un framework css. En termes simples, c'est du code qui est déjà
+                                            fait par quelqu'un d'autre qui nous permet de styliser nos sites web avec beaucoup plus
+                                            de facilité.
+                                            <br>
+                                            C'est accessible à tous, gratuit, libre de droit, et très utilisé dans le monde
+                                            de la programmation web.
+                                            <br>
+                                            <br>
+                                            J'ai donc fait le front-end (la partie visible du site) prenant également le rôle
+                                            de l'UX designer dans une équipe de développement.
+                                            <br>
+                                            <br>
+                                            Vous pouvez retrouver le projet à partir de <a href="/projects/ThePenguinIceFloe/web/controleurFrontal.php" target="_blank">ce lien</a>.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
 
-                        <!-- The Penguin Ice Floe -->
+                        <!-- Ai No Neko -->
                         <section class="col">
-                            <div class="card" style="text-decoration: none">
+                            <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#neko">
                                 <img src="/projects/images/ainoneko.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title">Ai no Neko</h5>
@@ -237,6 +661,43 @@
                                     <p class="card-text">
                                         Jeu réalisé lors de la Code Game Jam 2024 - IUT Montpellier-Sète
                                     </p>
+                                </div>
+                            </div>
+                            <!-- neko description -->
+                            <div class="modal fade" id="neko" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Description du projet</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/projects/images/ainoneko.png" class="card-img-top mb-5" alt="">
+                                            Tout comme Time Mage Tournament, il s'agit ici d'une Game Jam.
+                                            <br>
+                                            <br>
+                                            Cette fois-ci, m'intéressant à ce moment beaucoup au web, j'ai fait avec une équipe
+                                            un jeu vidéo sur Javascript, sans librairie (tout coder nous même).
+                                            <br>
+                                            <br>
+                                            A nouveau, j'étais le développeur. Et cette expérience, malgré nos compétences respectives largement
+                                            améliorées, fut un échec.
+                                            <br>
+                                            <br>
+                                            Le problème a été le choix de la technologie, qui nous demandait beaucoup plus de temps
+                                            que nous n'en avions de disponible.
+                                            <br>
+                                            <br>
+                                            Aujourd'hui, je mets en valeur cette expérience, car elle montre que derrière
+                                            tous ces précédents projets réussis, il y en a au moins tout autant qui ont échoué.
+                                            <br>
+                                            <br>
+                                            C'est aussi et surtout les projets comme celui-là qui donnent une véritable expérience.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
